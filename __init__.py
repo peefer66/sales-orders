@@ -6,7 +6,7 @@ from flask.ext.markdown import Markdown
 app = Flask(__name__)
 
 # dtatbase
-#app.config.from_object('settings')
+app.config.from_object('settings')
 db = SQLAlchemy(app)
 
 # Migrate
